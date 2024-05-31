@@ -42,6 +42,12 @@ namespace WpfApp1.Data
             return _dataBase.User.ToList().FirstOrDefault(x => x.Nickname == nickname);
         }
 
+        public static void UpdateUser(User user)
+        {
+            _dataBase.User.AddOrUpdate(user);
+            SaveChanges();
+        }
+
         public static void AddTask(MyTask task)
         {
             _dataBase.MyTask.Add(task);

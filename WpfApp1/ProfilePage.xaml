@@ -1,0 +1,21 @@
+﻿<Page x:Class="WpfApp1.ProfilePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ProfilePage">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Welcome,"></Label>
+                <Label x:Name="NicknameLbl"></Label>
+            </StackPanel>
+            <Button x:Name="ChangeNameBtn" Content="Change Nickname" Click="ChangeNameBtn_Click"></Button>
+            <Button x:Name="LogOutBtn" Content="Log out" Click="LogOutBtn_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Page>
